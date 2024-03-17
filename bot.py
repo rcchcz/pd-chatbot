@@ -17,18 +17,14 @@ conversa = ['Oi',
 trainer = ListTrainer(bot)
 trainer.train(conversa)
 
-# while True:
-#     pergunta = input("Usuário: ")
-#     resposta = bot.get_response(pergunta)
-#     if float(resposta.confidence) > 0.5:
-#         print('TW Bot: ', resposta)
-#     else:
-#         print('TW Bot: Ainda não sei responder esta pergunta')
-
 exit_conditions = (":q", "quit", "exit")
 while True:
     query = input("> ")
+    answer = bot.get_response(query)
     if query in exit_conditions:
         break
+    #elif float(answer.confidence) > 0.5:
     else:
-        print(f"🤖 {bot.get_response(query)}")
+        print(f"🤖 {answer}")
+    # else:
+    #     print("🤖 Ainda não sei como responder isso.")
