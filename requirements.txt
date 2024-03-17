@@ -1,0 +1,2 @@
+ChatterBot==1.0.4
+pytz==2024.1
