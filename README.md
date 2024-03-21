@@ -1,4 +1,4 @@
-# ChatBot
+# 🤖ChatBot
 
 
 ## Install requirements
@@ -34,3 +34,9 @@ Then, in another terminal, we run the client.
 path_to_python3.7_exec pd-chatbot\rpc\client.py 
 ```
 Same as the Socket version, inputs are made on the client side; wait for the bot response via RPC server.
+
+## About the authors and the project
+This project was developed for the Distributed Programming discipline, taught by professor Frederico Lopes at the Federal University of Rio Grande do Norte. 2024.1. 
+### Authors
+- [Antony Lemos](https://github.com/antonylemos)
+- [Rita Cruz](https://github.com/rcchcz/)
