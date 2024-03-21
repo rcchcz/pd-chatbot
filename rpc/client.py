@@ -11,7 +11,7 @@ def rpc_client():
 
         print('Received from server: ' + server_response)
 
-        message = input(" -> ")
+        message = input(">>> ")
 
 
 if __name__ == "__main__":
