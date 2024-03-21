@@ -4,7 +4,7 @@ import xmlrpc.client
 def rpc_client():
     server = xmlrpc.client.ServerProxy("http://localhost:8000")
 
-    message = input(" -> ")
+    message = input(">>> ")
 
     while message.lower().strip() != 'bye':
         server_response = server.answer(message)
