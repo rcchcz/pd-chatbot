@@ -4,6 +4,7 @@ from chatterbot import ChatBot
 bot = ChatBot('ChatBot')
 
 def bot_trainning():
+    print('[Training started]')
     conversa = ['Oi',
                 'Olá',
                 'Tudo bem?',
@@ -17,6 +18,7 @@ def bot_trainning():
 
     trainer = ListTrainer(bot)
     trainer.train(conversa)
+    print('[Training completed]')
 
 def bot_answer(query: str):
     answer = bot.get_response(query)
@@ -33,3 +35,6 @@ def bot_answer(query: str):
 #         print(f"🤖 {answer}")
 #     # else:
 #     #     print("🤖 Ainda não sei como responder isso.")
+
+if __name__ == '__main__':
+    bot_trainning()
